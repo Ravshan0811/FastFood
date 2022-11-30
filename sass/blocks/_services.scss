@@ -1,0 +1,160 @@
+.services{
+  background-color: #1C1C1C;
+  padding: 100px 50px;
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__card{
+    width: 470px;
+    height: 250px;
+  }
+  &--card1{
+    padding: 60px 5px 60px 290px;
+    background-image: url(../images/coffee.png);
+    background-size: 555px;
+    background-repeat: no-repeat;
+  }
+  &--card2{
+    padding: 60px 290px 60px 5px;
+    background-image: url(../../images/pizza.png);
+    background-size: 555px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--card3{
+    padding: 60px 5px 60px 290px;
+    background-image: url(../images/burgerKing.png);
+    background-size: 555px;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  &--card4{
+    padding: 60px 290px 60px 5px;
+    background-image: url(../../images/lavash.png);
+    background-size: 555px;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  &__caption{
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+  &__description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    max-width: 265px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__price{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    margin-bottom: 10px;
+  }
+  &__btn{
+    @include btn ();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.4s ease-in;
+    &:hover{
+      cursor: pointer;
+      background-color: transparent;
+    }
+    &:active{
+      background-color: maroon;
+    }
+  }
+}
+
+@media only screen and (max-width:620px) {
+  .services{
+    &__card{
+      width: 450px;
+      height: 250px;
+    }
+    &--card1{
+      padding: 40px 5px 40px 290px;
+      background-image: url(../images/coffee.png);
+    }
+    &--card2{
+      padding: 60px 290px 20px 5px;
+      background-image: url(../../images/pizza.png);
+    }
+    &--card3{
+      padding: 60px 5px 60px 290px;
+      background-image: url(../images/burgerKing.png);
+    }
+    &--card4{
+      padding: 40px 290px 40px 5px;
+      background-image: url(../../images/lavash.png);
+    }
+    &__caption{
+      font-size: 15px;
+    }
+    &__description{
+      font-size: 16px;
+      max-width: 130px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__btn{
+      padding: 10px 30px;
+      font-size: 10px;
+    }
+  }
+}
+@media only screen and (max-width:555px) {
+  .services{
+    &__card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: auto;
+    }
+    &--card1{
+      padding: 10px;
+    }
+    &--card2{
+      padding: 10px;
+    }
+    &--card3{
+      padding: 10px;
+    }
+    &--card4{
+      padding: 10px;
+    }
+    &__caption{
+      font-size: 15px;
+      text-align: center;
+    }
+    &__description{
+      text-align: center;
+      font-size: 16px;
+      max-width: 130px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__btn{
+      padding: 10px 20px;
+      font-size: 10px;
+      width: 100px;
+    }
+  }
+}

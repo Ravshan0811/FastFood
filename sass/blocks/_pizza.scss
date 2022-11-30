@@ -1,0 +1,75 @@
+.pizza{
+  padding: 100px 0;
+  background-color: #1C1C1C;
+  &__card{
+    max-width: 500px;
+    padding: 20px 50px;
+    background-image: url(../images/XXXL.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid chocolate;
+  }
+  &__caption{
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+  &__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__input input{
+    padding: 5px 10px;
+    width: 300px;
+    outline: none;
+    margin-top: 10px;
+  }
+  &__drop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  &__drop h2 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  &__radius{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__radius h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  &__radius button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  &__title{
+    margin-left: 40px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  &__check label{
+    margin-left: 40px;
+    color: #ffffff;
+    display: block;
+    gap: 50px;
+  }
+  &__wrapper{
+    display: flex;
+  }
+}

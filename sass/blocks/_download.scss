@@ -1,0 +1,46 @@
+.download{
+  padding: 100px;
+  background: #312F30;
+  &--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__caption{
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+  &__btn{
+    @include btn ();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.4s ease-in;
+    &:hover{
+      cursor: pointer;
+      background-color: transparent;
+    }
+    &:active{
+      background-color: maroon;
+    }
+  }
+}
+
+@media only screen and (max-width:810px) {
+  .download{
+    &--container{
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__caption{
+      font-size: 30px;
+    }
+    &__btn{
+      margin-top: 30px;
+      padding: 10px 30px;
+      font-size: 10px;
+    }
+  }
+}

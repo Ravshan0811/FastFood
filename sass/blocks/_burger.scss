@@ -1,0 +1,91 @@
+.burger{
+  background: #312F30;
+  &--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__caption{
+    font-weight: 500;
+    font-size: 44.2px;
+    color: #FFFFFF;
+  }
+  &__description{
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  &__price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  &__price{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    margin-bottom: 15px;
+  }
+  &__btn{
+    @include btn ();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.4s ease-in;
+    &:hover{
+      cursor: pointer;
+      background-color: transparent;
+    }
+    &:active{
+      background-color: maroon;
+    }
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .burger{
+    &--container{
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__price{
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width:850px) {
+  .burger{
+    &__img{
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (max-width:300px) {
+  .burger{
+    &__img{
+      max-width: 150px;
+    }
+    &__caption{
+      font-size: 20px;
+    }
+    &__description{
+      max-width: 160px;
+      font-size: 12px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    &__btn{
+      padding: 10px 30px;
+      font-size: 10px;
+    }
+  }
+}
