@@ -217,9 +217,9 @@
     <div class="container">
       <div class="pizza__card">
         <h2 class="pizza__caption">Pizza order</h2>
-        <form action="">
+        <form action="#">
           <div class="pizza__input">
-            <label for="text"><input type="text" id="text" placeholder="User name"></label>
+            <label for="text"><input type="text" id="user" placeholder="User name"></label>
             <label for="tel"><input type="tel" id="tel" placeholder="Phone number"></label>
             <label for="email"><input type="email" id="email" placeholder="User address"></label>
           </div>
@@ -228,43 +228,46 @@
             <select id="select">
               <option value="none"disabled selected>volume</option>
               <option value="Thin">Thin</option>
-              <option value="Medium">Medium</option>
-              <option value="Small">Small</option>
+              <option value="Medium" >Medium</option>
+              <option value="Thick">Thick</option>
             </select>
           </div>
           <div class="pizza__radius">
             <h2>Siza:</h2>
-            <button>25sm</button>
-            <button>30sm</button>
-            <button>35sm</button>
+            <span onclick="myFun1()" ><p id="fun1">25sm</p></span>
+            <span onclick="myFun2()" ><p id="fun2">30sm</p></span>
+            <span onclick="myFun3()" ><p id="fun3">35sm</p></span>
           </div>
           <h2 class="pizza__title">On Pizza:</h2>
           <div class="pizza__check">
-            <label for="turkey"><input type="checkbox" name="tomato" id="turkey">Turkey meat</label>
-            <label for=""><input type="checkbox" name="tomato" id="mushroom">Mushroom</label>
-            <label for="olive"><input type="checkbox" name="tomato" id="olive">Olive</label>
-            <label for="horse"><input type="checkbox" name="tomato" id="horse">Horse meat</label>
+            <label for="turkey"><input type="checkbox" id="turkey" value="Turkey meat">Turkey meat</label>
+            <label><input type="checkbox" id="mushroom" value="Mushroom">Mushroom</label>
+            <label for="olive"><input type="checkbox" id="olive" value="Olive">Olive</label>
+            <label for="horse"><input type="checkbox" id="horse" value="Horse meat">Horse meat</label>
           </div>
           <h2 class="pizza__title">Add:</h2>
           <div class="pizza__check">
-            <label for=""><input type="checkbox" name="pepper" id="pepper">Pepper</label>
-            <label for=""><input type="checkbox" name="sasu" id="sasu">Sausage cucumber</label>
+            <label><input type="checkbox" id="pepper" value="Pepper">Pepper</label>
+            <label><input type="checkbox" id="sausage" value="Sausage cucumber">Sausage cucumber</label>
           </div>
-          <button type="submit" class="pizza__btn" id="btn">Save</button>
+          <div class="pizza__wrapp_block">
+            <button type="submit" class="pizza__btn" id="btn">Save</button>
+          <button type="reset" id="btnn" class="pizza__btn">Reset</button>
+          </div>
         </form>
       </div>
-
+      
       <div class="pizza__wrapper">
-        <h2>name:</h2>
-        <h2>Phone:</h2>
-        <h2>Addess:</h2>
+        <h2 id="name">name:</h2>
+        <h2 id="phone">Phone:</h2>
+        <h2 id="address">Address:</h2>
         <hr>
-        <h2>Dough thickness:</h2>
-        <h2>Size:</h2>
-        <h2>Pizza:</h2>
-        <h2>Add:</h2>
+        <h2 id="dough">Dough thickness:</h2>
+        <h2 id="size">Size:</h2>
+        <h2 id="on">On Pizza:</h2>
+        <h2 id="add">Add:</h2>
         <hr>
-        <h2>Total::</h2>
+        <h2 id="total">Total:</h2>
       </div>
     </div>
   </section>
