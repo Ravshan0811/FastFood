@@ -233,26 +233,28 @@
             </select>
           </div>
           <div class="pizza__radius">
-            <h2>Siza:</h2>
-            <span onclick="myFun1()" ><p id="fun1">25sm</p></span>
-            <span onclick="myFun2()" ><p id="fun2">30sm</p></span>
-            <span onclick="myFun3()" ><p id="fun3">35sm</p></span>
+            <h2>Size:</h2>
+            <div id="fun0">
+              <label for="fun1"><input type="checkbox" id="fun1">25 sm</label>
+              <label for="fun2"><input type="checkbox" id="fun2">30 sm</label>
+              <label for="fun3"><input type="checkbox" id="fun3">35 sm</label>
+            </div>
           </div>
           <h2 class="pizza__title">On Pizza:</h2>
-          <div class="pizza__check">
+          <div class="pizza__check" id="pizzaUz">
             <label for="turkey"><input type="checkbox" id="turkey" value="Turkey meat">Turkey meat</label>
-            <label><input type="checkbox" id="mushroom" value="Mushroom">Mushroom</label>
+            <label for="mushroom"><input type="checkbox" id="mushroom" value="Mushroom">Mushroom</label>
             <label for="olive"><input type="checkbox" id="olive" value="Olive">Olive</label>
             <label for="horse"><input type="checkbox" id="horse" value="Horse meat">Horse meat</label>
           </div>
           <h2 class="pizza__title">Add:</h2>
-          <div class="pizza__check">
+          <div class="pizza__check" id="pizza">
             <label><input type="checkbox" id="pepper" value="Pepper">Pepper</label>
             <label><input type="checkbox" id="sausage" value="Sausage cucumber">Sausage cucumber</label>
           </div>
           <div class="pizza__wrapp_block">
-            <button type="submit" class="pizza__btn" id="btn">Save</button>
-          <button type="reset" id="btnn" class="pizza__btn">Reset</button>
+            <button type="button" onclick="myfun()" class="pizza__btn" id="btn">Save</button>
+            
           </div>
         </form>
       </div>

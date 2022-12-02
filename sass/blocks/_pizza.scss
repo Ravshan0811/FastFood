@@ -51,23 +51,7 @@
     font-size: 20px;
     color: #ffffff;
   }
-  &__radius span{
-    background-color: chocolate;
-    position: relative;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0);
-  }
-  &__radius p{
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    right: 30%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
   }
   &__title{
     margin-left: 40px;
@@ -117,7 +101,6 @@
       background-color: maroon;
     }
   }
-}
 
 
 @media only screen and (max-width:450px) {
