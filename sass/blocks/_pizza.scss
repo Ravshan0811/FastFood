@@ -1,8 +1,8 @@
-.pizza{
+.pizza {
   padding: 100px 0;
-  background-color: #1C1C1C;
-  
-  &__card{
+  background-color: #1c1c1c;
+
+  &__card {
     max-width: 500px;
     padding: 20px 50px;
     background-image: url(../images/XXXL.webp);
@@ -11,25 +11,25 @@
     background-size: cover;
     border: 1px solid chocolate;
   }
-  &__caption{
+  &__caption {
     font-weight: 500;
     font-size: 30px;
     color: white;
     text-align: center;
   }
-  &__input{
+  &__input {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  &__input input{
+  &__input input {
     padding: 5px 10px;
     width: 300px;
     outline: none;
     margin-top: 10px;
   }
-  &__drop{
+  &__drop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@
     font-size: 25px;
     color: #ffffff;
   }
-  &__radius{
+  &__radius {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,60 +52,58 @@
     color: #ffffff;
   }
 
-  }
-  &__title{
-    margin-left: 40px;
-    text-align: left;
-    font-weight: 500;
-    font-size: 20px;
+&__title {
+  margin-left: 40px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+&__check label {
+  margin-left: 40px;
+  color: #ffffff;
+  display: block;
+  gap: 50px;
+}
+&__wrapper {
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 1px solid chocolate;
+}
+&__wrapper hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+&__wrapp_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+&__btn {
+  padding: 5px 15px;
+  border-color: coral;
+  background-color: gold;
+  transition: all 0.4s ease-in;
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
     color: #ffffff;
-    margin-top: 50px;
   }
-  &__check label{
-    margin-left: 40px;
-    color: #ffffff;
-    display: block;
-    gap: 50px;
+  &:active {
+    background-color: maroon;
   }
-  &__wrapper {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 500px;
-    margin-top: 50px;
-    border: 1px solid chocolate;
-  }
-  &__wrapper hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  &__wrapp_block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  &__btn{
-    padding: 5px 15px;
-    border-color: coral;
-    background-color: gold;
-    transition: all 0.4s ease-in;
-    &:hover{
-      cursor: pointer;
-      background-color: transparent;
-      color: #ffffff;
-    }
-    &:active{
-      background-color: maroon;
-    }
-  }
-
-
-@media only screen and (max-width:450px) {
-  .pizza{
-    &__card{
+}
+}
+@media only screen and (max-width: 450px) {
+  .pizza {
+    &__card {
       max-width: 500px;
       padding: 20px 50px;
       background-image: url(../images/XXXL.webp);
@@ -114,29 +112,29 @@
       background-size: cover;
       border: 1px solid chocolate;
     }
-    &__caption{
+    &__caption {
       font-size: 20px;
     }
-    &__input{
+    &__input {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
     }
-    &__input input{
+    &__input input {
       padding: 5px 10px;
       width: 200px;
       outline: none;
       margin-top: 10px;
     }
-    &__drop{
+    &__drop {
       margin-top: 30px;
       gap: 3px;
     }
     &__drop h2 {
       font-size: 18px;
     }
-    &__radius{
+    &__radius {
       margin-top: 30px;
       display: flex;
       align-items: center;
@@ -146,17 +144,17 @@
     &__radius h2 {
       font-size: 18px;
     }
-    &__radius span{
+    &__radius span {
       width: 30px;
       height: 30px;
     }
-    &__radius p{
+    &__radius p {
       font-size: 10px;
     }
-    &__title{
+    &__title {
       font-size: 18px;
     }
-    &__check label{
+    &__check label {
       margin-left: 53px;
       color: #ffffff;
       display: block;
@@ -173,19 +171,23 @@
       gap: 20px;
       margin-top: 20px;
     }
-    &__btn{
+    &__btn {
       padding: 5px 15px;
       border-color: coral;
       background-color: gold;
       transition: all 0.4s ease-in;
-      &:hover{
+      &:hover {
         cursor: pointer;
         background-color: transparent;
         color: #ffffff;
       }
-      &:active{
+      &:active {
         background-color: maroon;
       }
     }
   }
+}
+
+.add{
+  display: flex;
 }
