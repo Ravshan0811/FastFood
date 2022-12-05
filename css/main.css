@@ -737,7 +737,7 @@ template {
 }
 .services--card2 {
   padding: 60px 290px 60px 5px;
-  background-image: url(../../images/pizza.png);
+  background-image: url(../images/pizza.png);
   background-size: 555px;
   background-position: center;
   background-repeat: no-repeat;
@@ -751,7 +751,7 @@ template {
 }
 .services--card4 {
   padding: 60px 290px 60px 5px;
-  background-image: url(../../images/lavash.png);
+  background-image: url(../images/lavash.png);
   background-size: 555px;
   background-position: center;
   background-repeat: no-repeat;
@@ -812,7 +812,7 @@ template {
   }
   .services--card2 {
     padding: 60px 290px 20px 5px;
-    background-image: url(../../images/pizza.png);
+    background-image: url(../images/pizza.png);
   }
   .services--card3 {
     padding: 60px 5px 60px 290px;
@@ -820,7 +820,7 @@ template {
   }
   .services--card4 {
     padding: 40px 290px 40px 5px;
-    background-image: url(../../images/lavash.png);
+    background-image: url(../images/lavash.png);
   }
   .services__caption {
     font-size: 15px;
