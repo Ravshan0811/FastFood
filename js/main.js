@@ -20,6 +20,7 @@ function myfun () {
   phone.textContent += tel.value
   address.textContent += email.value
   dough.textContent += select.value
+  
   if (fun0.children[0].children[0].checked) {
     size.textContent += "  25 sm"
     som += 10;

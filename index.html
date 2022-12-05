@@ -227,17 +227,17 @@
             <h2>Dough thickness:</h2>
             <select id="select">
               <option value="none"disabled selected>volume</option>
-              <option value="Thin">Thin</option>
-              <option value="Medium" >Medium</option>
-              <option value="Thick">Thick</option>
+              <option value="Thin" id="thin">Thin</option>
+              <option value="Medium"  id="medium">Medium</option>
+              <option value="Thick" id="thick">Thick</option>
             </select>
           </div>
           <div class="pizza__radius">
             <h2>Size:</h2>
             <div id="fun0" class="pizza__radius">
-              <label for="fun1"><input type="checkbox" id="fun1">25 sm</label>
-              <label for="fun2"><input type="checkbox" id="fun2">30 sm</label>
-              <label for="fun3"><input type="checkbox" id="fun3">35 sm</label>
+              <label for="fun1"><input type="checkbox" id="fun1"><p>25 sm</p></label>
+              <label for="fun2"><input type="checkbox" id="fun2"><p>30 sm</p></label>
+              <label for="fun3"><input type="checkbox" id="fun3"><p>35 sm</p></label>
             </div>
           </div>
           <h2 class="pizza__title">On Pizza:</h2>
@@ -254,6 +254,7 @@
           </div>
           <div class="pizza__wrapp_block">
             <button type="button" onclick="myfun()" class="pizza__btn" id="btn">Save</button>
+            <button type="reset"  class="pizza__btn" id="btn">reset</button>
           </div>
         </form>
       </div>
